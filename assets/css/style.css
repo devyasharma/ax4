@@ -2735,7 +2735,7 @@ hr.title-line {
 }
 
  .ss{
-    background-image: url("/assets/img/blue-water-splash-on-white-background-liquid-drips-scattered-generated-ai-photo-removebg-preview.png");
+    background-image: url('/assets/img/blue-water-splash-on-white-background-liquid-drips-scattered-generated-ai-photo-removebg-preview.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6947,7 +6947,7 @@ ol.wp-block-rss {
 .footer-layout1 .widget-area {
     padding-top: 80px;
     padding-bottom: 30px;
-    background-image: url("/assets/img/360_F_279027561_ajc1QW7scmTcNDqPMeOB6dhnfW4oszPI.jpg");
+    background-image: url('/assets/img/360_F_279027561_ajc1QW7scmTcNDqPMeOB6dhnfW4oszPI.jpg');
     background-blend-mode: overlay;
     background-color: #192a30fa;
     background-repeat: no-repeat;
