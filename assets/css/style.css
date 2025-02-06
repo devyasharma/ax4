@@ -158,7 +158,7 @@ p:empty {
 p {
     font-family: var(--body-font);
     margin: 0 0 18px 0;
-    color: var(--body-color);
+    color: #363a42;
     line-height: 1.75
 }
 
@@ -231,6 +231,7 @@ h6 {
     font-size: 20px;
     line-height: 1.5
 }
+
 
 @media (max-width: 1199px) {
 
@@ -2733,8 +2734,14 @@ hr.title-line {
     background-color: var(--theme-color2) !important
 }
 
-.bg-smoke {
-    background-color: var(--smoke-color) !important
+ .ss{
+    background-image: url("/assets/img/blue-water-splash-on-white-background-liquid-drips-scattered-generated-ai-photo-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgb(176, 239, 255);
+height: 750px;
 }
 
 .bg-smoke2 {
@@ -4051,7 +4058,8 @@ a.text-theme:hover,
 .recent-post .media-img img {
     width: 100%;
     -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out
+    transition: 0.4s ease-in-out;
+    height: 90px;
 }
 
 .recent-post .media-img:after {
@@ -5378,7 +5386,10 @@ ol.wp-block-rss {
 
 .main-menu ul {
     margin: 0;
-    padding: 0
+    padding-right: 160px;
+}
+.col-auto .lg{
+    width: 65px;
 }
 
 .main-menu ul li {
@@ -5724,13 +5735,16 @@ ol.wp-block-rss {
     }
 
     .header-logo img {
-        max-width: 180px
+        max-width: 65px
     }
 }
 
 @media (max-width: 375px) {
     .header-logo img {
         max-width: 160px
+    }
+    .bg-smoke{
+        height: 600px;
     }
 }
 
@@ -5891,6 +5905,9 @@ ol.wp-block-rss {
     .header-layout2 .menu-area {
         padding-left: 10px;
         padding-right: 10px
+    }
+    .bg-smoke{
+        height: 600px;
     }
 }
 
@@ -6292,6 +6309,9 @@ ol.wp-block-rss {
 @media (max-width: 575px) {
     .call-btn {
         padding: 0 15px
+    }
+    .bg-smoke{
+        height: 603px;
     }
 }
 
@@ -6754,6 +6774,7 @@ ol.wp-block-rss {
         margin-left: auto;
         margin-right: auto
     }
+   
 
     .footer-wrapper .newsletter-form {
         max-width: 550px;
@@ -6925,7 +6946,13 @@ ol.wp-block-rss {
 
 .footer-layout1 .widget-area {
     padding-top: 80px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    background-image: url("/assets/img/360_F_279027561_ajc1QW7scmTcNDqPMeOB6dhnfW4oszPI.jpg");
+    background-blend-mode: overlay;
+    background-color: #192a30fa;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width: 767px) {
@@ -7040,7 +7067,7 @@ ol.wp-block-rss {
 
 .footer-layout1 .th-social a {
     border-radius: 50%;
-    background: #0f5132;
+    background: #015B72;
 }
 
 .footer-layout1 .th-social a:hover {
@@ -7380,14 +7407,14 @@ ol.wp-block-rss {
 
 .breadcumb-wrapper {
     background-color: var(--smoke-color2);
-    padding: 295px 0 150px 0;
+    padding: 500px 0 150px 0;
     text-align: start;
     position: relative;
     z-index: 2
 }
 
 .breadcumb-wrapper:has(.breadcrumb-bottom-shape) {
-    padding: 295px 0 210px;
+    padding: 250px 0 450px;
     margin-bottom: -10px
 }
 
@@ -17335,7 +17362,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .service-card .box-img img {
-    height: 250px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     -webkit-transition: 0.4s ease-in-out;

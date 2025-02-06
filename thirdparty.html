@@ -38,10 +38,12 @@
 </head>
 
 <body>
-    <div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i
-                    class="fal fa-search"></i></button></form>
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
     </div>
+    
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 60px;" alt="Ax4 Group"></a></div>
@@ -73,6 +75,8 @@
                                         Golden Street</a></li>
                             </ul>
                         </div>
+
+                        
                     </div>
                     <div class="col-auto">
                         <div class="header-links">
@@ -84,21 +88,26 @@
                                             href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>                       
                                     </div>
                                 </li>
-                            
+                                <li class="d-none d-md-inline-block">
+                                    <div id="google_translate_element">
+                                    </div>
+                                </li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="sticky-wrapper">
             <div class="menu-area">
                 <div class="header-menu-left-shape" data-mask-src="assets/img/shape/header-menu-left-shape.png"></div>
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 60px;"
-                                alt="Ax4 Group"></a></div>
+                            <div class="header-logo lg"><a href="index.html"><img src="assets/img/1.png"
+                                        alt="Ax4 Group"></a></div>
                         </div>
                         <div class="col-auto">
                             <div class="row align-items-center">
@@ -119,8 +128,9 @@
                                             class="far fa-bars"></i></button>
                                 </div>
                                 <div class="col-auto d-none d-xl-block">
-                                    <div class="header-button"><button type="button"
-                                            class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button>
+                                    <div class="header-button">
+                                        <!-- <button type="button"
+                                            class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button> -->
                                         <div class="header-info-box">
                                             <div class="header-info-box__icon"><i
                                                     class="fa-sharp fa-light fa-phone"></i></div>
@@ -139,61 +149,57 @@
             </div>
         </div>
     </header>
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/20240529204040649.jpg">
-        <div class="breadcrumb-bottom-shape"><img src="assets/img/bg/breadcrumb-bottom.png" alt="shape"></div>
-        <div class="shape-mockup breadcrumb-left jump-reverse"><img src="assets/img/icon/breadcrumb-left.png"
-                alt="shape"></div>
-        <div class="shape-mockup breadcrumb-right jump"><img src="assets/img/icon/breadcrumb-right.png" alt="shape">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/3rd-party-content-blog.png">
+        <div class="breadcrumb-bottom-shape"><img src="assets/img/bg/breadcrumb-bottom.png" alt="shape"></div> <div class="hero2-animated-bubble">
+            <div class="bubbles"><img src="assets/img/shape/bubble_1.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_2.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_3.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_4.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_5.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_6.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_7.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_8.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_9.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_10.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_11.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_12.png" alt="Bubble-img"></div>
         </div>
+      
         <div class="container">
             <div class="breadcumb-content">
-                <!-- <h1 class="breadcumb-title">Third Party Manufacturers</h1> -->
-                <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Details</li>
-                </ul>
+               
             </div>
         </div>
     </div>
+    
     <section class="th-blog-wrapper blog-details space-top space-extra-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="th-blog blog-single">
-                        <div class="blog-img"><img src="assets/img/blog/blog-s-1-1.jpg" alt="Blog Image"></div>
+                        <div class="blog-img"><img src="assets/img/f25ad675412619.5c4b966499a27-min-1.jpg" alt="Blog Image"></div>
                         <div class="blog-content">
-                            <div class="blog-meta"><a class="author" href="blog.html"><i class="fa-solid fa-user"></i>By
+                            <!-- <div class="blog-meta"><a class="author" href="blog.html"><i class="fa-solid fa-user"></i>By
                                     Kleanix</a> <a href="blog.html"><i class="fa-solid fa-calendar-days"></i>21 June,
                                     2024</a> <a href="blog-details.html"><i class="fa-solid fa-tags"></i>Commercial
-                                    Cleaning</a></div>
-                            <h2 class="blog-title">10 Essential Cleaning Tips for a Sparkling Home</h2>
-                            <p>House cleaning services provide professional cleaning of residential spaces. These
-                                services are designed to maintain cleanliness, hygiene, and overall appearance of homes,
-                                offering convenience to homeowners and ensuring a healthy living environment. Yes, we
-                                offer discounts for recurring cleaning services and special promotions throughout the
-                                year. Additionally, we have a loyalty program for our regular clients, providing them
-                                with exclusive benefits and discounts</p>
-                            <p>Our cleaners are thoroughly vetted, background-checked, and trained to maintain the
-                                highest standards of professionalism and trustworthiness. We take the security of your
-                                home seriously and ensure that our team follows strict protocols while on your premises.
+                                    Cleaning</a></div> -->
+                            <h2 class="blog-title">Ax4 Group <i>Jhankaar Chamak Detergent</i> (Liquid/Powder)</h2>
+                            <p>Jhankaar Chamak Detergent is an advanced cleaning solution designed to tackle tough stains, eliminate odors, and maintain fabric quality. Its powerful formula ensures deep cleaning while being gentle on skin and environmentally friendly. Suitable for both top-load and front-load washing machines, it delivers outstanding results in every wash.</p>
+                            <p> Effectively removes oil, grease, mud, and sweat stains. Eliminates bad odors and leaves a long-lasting fresh scent. We produce detergent products for other brands under private labels. Businesses partner with these manufacturers to develop high-quality detergents without the need for in-house production facilities.
                             </p>
                             <blockquote>
-                                <p>Specialized cleaning to remove construction dust, debris, and residues left after
-                                    renovation or remodeling projects.</p><cite>Michel Clarck</cite>
+                                <p>I’ve tried many brands, but Jhankaar Chamak Detergent is by far the best. It removes stains easily, and my clothes come out smelling fresh every time.</p><cite>Michel Clarck</cite>
                             </blockquote>
-                            <p>These services are designed to maintain cleanliness, hygiene, and overall appearance of
-                                homes, offering convenience to homeowners and ensuring a healthy living environment.
-                                Routine cleaning tasks performed weekly or bi-weekly, including dusting, vacuuming,
-                                mopping, and sanitizing bathrooms and kitchens. Intensive cleaning targeting areas often
-                                neglected.</p>
+                            <p>"Our daycare center needed a detergent that is both powerful and safe for children’s clothing. Jhankaar Chamak Detergent provided a biodegradable, hypoallergenic solution that works perfectly."</p>
                             <div class="row mt-30">
                                 <div class="col-md-12 mb-4"><img class="w-100 rounded-20"
-                                        src="assets/img/blog/blog_inner_1.jpg" alt="Blog Image"></div>
+                                        src="assets/img/laundry-detergent-2048px-5523-2x1-1.webp" alt="Blog Image"></div>
                             </div>
-                            <p>A cleaning service company specializes in providing professional cleaning solutions for
-                                residential, commercial, and industrial spaces. These services range from regular
-                                housekeeping tasks to deep cleaning, sanitation, and specialized cleaning services.</p>
-                            <div class="share-links clearfix">
+                            <p>We provide large quantities of raw detergents
+                                for repackaging or direct use in industries, Commercial laundry services
+                                and Industrial cleaning companies.<br>
+                                It's Dermatologically Tested, Works efficiently at all temperatures and Protects fabric fibers, keeping clothes soft and fresh.</p>
+                            <!-- <div class="share-links clearfix">
                                 <div class="row justify-content-between">
                                     <div class="col-sm-auto"><span class="share-links-title">Tags:</span>
                                         <div class="tagcloud"><a href="blog.html">Commercial Cleaning</a> <a
@@ -209,10 +215,10 @@
                                                 target="_blank"><i class="fab fa-instagram"></i></a></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="th-comments-wrap">
+                    <!-- <div class="th-comments-wrap">
                         <h2 class="blog-inner-title h4"><i class="fa-sharp fa-solid fa-comments"></i> Comments (03)</h2>
                         <ul class="comment-list">
                             <li class="th-comment-item">
@@ -258,7 +264,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div>  -->
                     <div class="th-comment-form">
                         <div class="form-title">
                             <h3 class="blog-inner-title h4 mb-2"><i class="fa-solid fa-reply"></i> Leave a Comment</h3>
@@ -289,60 +295,63 @@
                         <div class="widget widget_categories">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
-                                <li><a href="blog.html">Office Cleaning</a> <span><i
+                                <li><a href="product.html"> Liquid Detergents</a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
-                                <li><a href="blog.html">Home Cleaning</a> <span><i
+                                <li><a href="product.html">Powder Detergents</a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
-                                <li><a href="blog.html">Kitchen Cleaning</a> <span><i
+                                <li><a href="product.html">Pod/Tablet Detergents</a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
-                                <li><a href="blog.html">Bathroom Cleaning</a> <span><i
+                                <li><a href="product.html">Laundry Detergents</a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
-                                <li><a href="blog.html">Floor Cleaning</a> <span><i
+                                <li><a href="product.html">Dishwashing Detergents</a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
-                                <li><a href="blog.html">Window Cleaning</a> <span><i
+                                <li><a href="product.html">Synthetic Detergents</a> <span><i
+                                            class="fa-sharp fa-light fa-arrow-right"></i></span></li>
+                                <li><a href="product.html">Enzyme-Based Detergents</a> <span><i
+                                            class="fa-sharp fa-light fa-arrow-right"></i></span></li>
+                                <li><a href="product.html">Hypoallergenic Detergents</a> <span><i
+                                            class="fa-sharp fa-light fa-arrow-right"></i></span></li>
+                                <li><a href="product.html">Automotive Detergents </a> <span><i
                                             class="fa-sharp fa-light fa-arrow-right"></i></span></li>
                             </ul>
                         </div>
-                        <div class="widget">
+                        <div class="widget"> 
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a></div>
+                                    <div class="media-img"><img
+                                                src="assets/img/bottling-liquid-detergent-28309781.webp" alt="Blog Image"></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="fa-solid fa-calendar-days"></i>22 June, 2024</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Detailed
-                                                Cleaning for a Beautiful Home</a></h4>
+                                        <div class="recent-post-meta"><i
+                                                    class="fa-solid fa-calendar-days"></i> 22 Dec, 2024</div>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">This detergent works wonders on food, grass, and ink stains. Highly recommend</a></h4>
                                     </div>
                                 </div>
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a></div>
+                                    <div class="media-img"><img
+                                                src="assets/img/istockphoto-1452474970-612x612.jpg" alt="Blog Image"></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="fa-solid fa-calendar-days"></i>22 June, 2024</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Detailed
-                                                Cleaning for a Beautiful Home</a></h4>
+                                        <div class="recent-post-meta"><i
+                                                    class="fa-solid fa-calendar-days"></i> 10 Jan, 2025</div>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">The fragrance stays on clothes for days</a></h4>
                                     </div>
                                 </div>
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a></div>
+                                    <div class="media-img"><img
+                                                src="assets/img/istockphoto-481819615-612x612.jpg" alt="Blog Image"></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="fa-solid fa-calendar-days"></i>22 June, 2024</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Detailed
-                                                Cleaning for a Beautiful Home</a></h4>
+                                        <div class="recent-post-meta"><i
+                                                    class="fa-solid fa-calendar-days"></i> 3 Feb, 2025</div>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">The detergent is fantastic, just fresh and clean</a></h4>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         <div class="widget widget_tag_cloud">
                             <h3 class="widget_title">Popular Tags</h3>
-                            <div class="tagcloud"><a href="blog.html">House Cleaning</a> <a href="blog.html">Clean</a>
-                                <a href="blog.html">Appliance</a> <a href="blog.html">Window Clean</a> <a
-                                    href="blog.html">Deep Clean</a> <a href="blog.html">Tips</a></div>
+                            <div class="tagcloud"><a href="index.html">Custom Formulation </a> <a href="index.html">Bulk Production & Scalability</a>
+                                <a href="index.html">Bulk Production & Scalability</a> <a href="index.html">Regulatory Compliance</a> <a
+                                    href="index.html"> Eco-Friendly Options</a> <a href="index.html">Packaging & Branding Support</a></div>
                         </div>
                     </aside>
                 </div>
@@ -355,33 +364,15 @@
         <div class="shape-mockup footer-shape-2 jump-reverse"><img src="assets/img/icon/footer-shape-2.png" alt="shape">
         </div>
         <div class="shape-mockup footer-top-shape" data-bg-src="assets/img/shape/footer-1-top-shape.png"></div>
-        <div class="footer-top">
-            <div class="container">
-                <div class="subscribe-box">
-                    <div class="row gy-40 align-items-center justify-content-center">
-                        <!-- <div class="col-xl-6">
-                            <h4 class="subscribe-box_title">Get Update From Newsletter</h4>
-                            <p class="subscribe-box_text">Regular inspections and feedback mechanisms</p>
-                        </div> -->
-                        <div class="col-xl-6 col-lg-8">
-                            <form class="newsletter-form">
-                                <div class="form-group"><input class="form-control" type="email"
-                                        placeholder="Enter your email" required=""></div><button type="submit"
-                                    class="th-btn style3"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
-                                <div class="about-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 60px;"
-                                    alt="Ax4 Group"></a></div>
+                                <div class="about-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 65px;"
+                                            alt="Ax4 Group"></a></div>
                                 <p class="about-text">When it comes to detergent manufacturing, choosing the right partner is crucial for delivering high-quality, effective, and competitive products.</p>
                                 <div class="about-bottom">
                                     <h4 class="about-bottom-title">Working Hour:</h4>
@@ -493,6 +484,33 @@
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg></div>
+       
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en', // Original page language (English)
+                    includedLanguages: 'hi,en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+    
+            function setGoogleTranslateLanguage(lang) {
+                var select = document.querySelector(".goog-te-combo");
+                if (select) {
+                    select.value = lang;
+                    select.dispatchEvent(new Event("change"));
+                }
+            }
+    
+            window.onload = function () {
+                setTimeout(function () {
+                    setGoogleTranslateLanguage('hi'); // Force Hindi translation on load
+                }, 500); // Delay to ensure Google Translate is loaded
+            };
+        </script>
+    
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/main.js"></script>

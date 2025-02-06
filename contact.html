@@ -38,9 +38,10 @@
 </head>
 
 <body>
-    <div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i
-                    class="fal fa-search"></i></button></form>
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
     </div>
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -73,6 +74,8 @@
                                         Golden Street</a></li>
                             </ul>
                         </div>
+
+                        
                     </div>
                     <div class="col-auto">
                         <div class="header-links">
@@ -84,21 +87,27 @@
                                             href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>                       
                                     </div>
                                 </li>
-                            
+                                <li class="d-none d-md-inline-block">
+                                    <div id="google_translate_element">
+                                    </div>
+                                </li>
+                                
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="sticky-wrapper">
             <div class="menu-area">
                 <div class="header-menu-left-shape" data-mask-src="assets/img/shape/header-menu-left-shape.png"></div>
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 60px;"
-                                alt="Ax4 Group"></a></div>
+                            <div class="header-logo lg"><a href="index.html"><img src="assets/img/1.png"
+                                        alt="Ax4 Group"></a></div>
                         </div>
                         <div class="col-auto">
                             <div class="row align-items-center">
@@ -119,8 +128,9 @@
                                             class="far fa-bars"></i></button>
                                 </div>
                                 <div class="col-auto d-none d-xl-block">
-                                    <div class="header-button"><button type="button"
-                                            class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button>
+                                    <div class="header-button">
+                                        <!-- <button type="button"
+                                            class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button> -->
                                         <div class="header-info-box">
                                             <div class="header-info-box__icon"><i
                                                     class="fa-sharp fa-light fa-phone"></i></div>
@@ -145,6 +155,20 @@
                 alt="shape"></div>
         <div class="shape-mockup breadcrumb-right jump"><img src="assets/img/icon/breadcrumb-right.png" alt="shape">
         </div>
+        <div class="hero2-animated-bubble">
+            <div class="bubbles"><img src="assets/img/shape/bubble_1.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_2.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_3.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_4.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_5.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_6.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_7.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_8.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_9.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_10.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_11.png" alt="Bubble-img"></div>
+            <div class="bubbles"><img src="assets/img/shape/bubble_12.png" alt="Bubble-img"></div>
+        </div>
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Contact</h1>
@@ -155,6 +179,7 @@
             </div>
         </div>
     </div>
+    
     <div class="contact-area-2 space-top" id="contact-sec">
         <div class="container">
             <div class="title-area text-center">
@@ -247,9 +272,11 @@
         </div>
     </div>
     <div class="space">
+        <div class="container">
         <div class="contact-map"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuztheme!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd"
                 allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
     </div>
     <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_2.jpg">
         <div class="shape-mockup footer-shape-1 jump-reverse d-none d-xxl-block"><img
@@ -257,33 +284,15 @@
         <div class="shape-mockup footer-shape-2 jump-reverse"><img src="assets/img/icon/footer-shape-2.png" alt="shape">
         </div>
         <div class="shape-mockup footer-top-shape" data-bg-src="assets/img/shape/footer-1-top-shape.png"></div>
-        <div class="footer-top">
-            <div class="container">
-                <div class="subscribe-box">
-                    <div class="row gy-40 align-items-center justify-content-center">
-                        <!-- <div class="col-xl-6">
-                            <h4 class="subscribe-box_title">Get Update From Newsletter</h4>
-                            <p class="subscribe-box_text">Regular inspections and feedback mechanisms</p>
-                        </div> -->
-                        <div class="col-xl-6 col-lg-8">
-                            <form class="newsletter-form">
-                                <div class="form-group"><input class="form-control" type="email"
-                                        placeholder="Enter your email" required=""></div><button type="submit"
-                                    class="th-btn style3"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
-                                <div class="about-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 60px;"
-                                    alt="Ax4 Group"></a></div>
+                                <div class="about-logo"><a href="index.html"><img src="assets/img/1.png" style="width: 65px;"
+                                            alt="Ax4 Group"></a></div>
                                 <p class="about-text">When it comes to detergent manufacturing, choosing the right partner is crucial for delivering high-quality, effective, and competitive products.</p>
                                 <div class="about-bottom">
                                     <h4 class="about-bottom-title">Working Hour:</h4>
@@ -395,6 +404,33 @@
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg></div>
+       
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en', // Original page language (English)
+                    includedLanguages: 'hi,en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+    
+            function setGoogleTranslateLanguage(lang) {
+                var select = document.querySelector(".goog-te-combo");
+                if (select) {
+                    select.value = lang;
+                    select.dispatchEvent(new Event("change"));
+                }
+            }
+    
+            window.onload = function () {
+                setTimeout(function () {
+                    setGoogleTranslateLanguage('hi'); // Force Hindi translation on load
+                }, 500); // Delay to ensure Google Translate is loaded
+            };
+        </script>
+    
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/main.js"></script>
