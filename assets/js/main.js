@@ -2,7 +2,9 @@
   "use strict";
   if (
     (e(window).on("load", function () {
-      e(".preloader").fadeOut();
+      setTimeout(function () {
+        e(".preloader").fadeOut();
+      }, 400); 
     }),
     e(".preloader").length > 0 &&
       e(".preloaderCls").each(function () {

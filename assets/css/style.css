@@ -231,7 +231,28 @@ h6 {
     font-size: 20px;
     line-height: 1.5
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    overflow: hidden;
+}
 
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the screen */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 50%; /* Adjust the size */
+    /* opacity: 0.7; */
+    pointer-events: none; /* Ensures clicks go through the image */
+}
 
 @media (max-width: 1199px) {
 
@@ -1382,7 +1403,7 @@ textarea.is-invalid {
     top: 0;
     bottom: 0;
     z-index: 999;
-    background-color: var(--dark-color)
+    background: #052632;
 }
 
 .preloader .th-btn {
@@ -2741,7 +2762,7 @@ hr.title-line {
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-color: rgb(176, 239, 255);
-height: 750px;
+height: 722px;
 }
 
 .bg-smoke2 {
@@ -5735,13 +5756,13 @@ ol.wp-block-rss {
     }
 
     .header-logo img {
-        max-width: 65px
+        max-width: 40px
     }
 }
 
 @media (max-width: 375px) {
     .header-logo img {
-        max-width: 160px
+        max-width: 45px
     }
     .bg-smoke{
         height: 600px;
@@ -7421,7 +7442,7 @@ ol.wp-block-rss {
 @media (max-width: 991px) {
     .breadcumb-wrapper:has(.breadcrumb-bottom-shape) {
         margin-bottom: -20px;
-        padding: 275px 0 185px
+        padding: 295px 0 209px
     }
 }
 
@@ -7433,7 +7454,8 @@ ol.wp-block-rss {
 
 @media (max-width: 575px) {
     .breadcumb-wrapper:has(.breadcrumb-bottom-shape) {
-        padding: 215px 0 155px
+        padding: 215px 0 155px;
+        background-size: contain;
     }
 }
 
@@ -9386,7 +9408,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 
 @media (max-width: 1500px) {
     .hero-style2 .hero-title {
-        font-size: 84px
+        font-size: 50px;
     }
 }
 
@@ -9529,7 +9551,8 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 
 .hero2-bottom-from-area {
     background-color: var(--theme-color2);
-    padding: 30px 0 47px
+    padding: 30px 0 47px;
+    margin-top: -12px;
 }
 
 .hero2-bottom-from-area .hero-from-top-shape {

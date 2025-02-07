@@ -35,12 +35,81 @@
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+      
+
+<style>
+    /* Styles for the banner */
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full-screen height */
+        overflow: hidden;
+    }
+
+    /* Video Styling */
+    .banner video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    /* Overlay Content */
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    /* Fallback for mobile devices */
+    @media (max-width: 768px) {
+        .banner video {
+            display: none;
+        }
+        .banner {
+            background: url('assets/img/blue.png') no-repeat center center/cover;
+        }
+    }
+    .goog-te-gadget-simple {
+    background-color: rgb(231, 114, 3) !important;
+    /* border-left: 1px solid #8d8c8c; */
+    /* border-top: 1px solid #9B9B9B; */
+    /* border-bottom: 1px solid #E8E8E8; */
+    /* border-right: 1px solid #D5D5D5; */
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.goog-te-gadget img {
+    /* vertical-align: middle;
+    border: none; */
+    display: contents;
+}
+
+</style>
 </head>
 
 <body>
     <div class="preloader">
         <div class="preloader-inner">
-            <div class="loader"></div>
+            <!-- <div class="loader"></div> -->
+            <video src="assets/Ax4 Group (1).mp4" autoplay loop muted width="30%"></video>
         </div>
     </div>
     <!--    
@@ -57,7 +126,7 @@
                     <li><a href="index.html">Home</a>
 
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="thirdparty.html">Third Party Manufacturing</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -85,29 +154,22 @@
                     </div>
                     <div class="col-auto">
                         <div class="header-links">
-                            <ul>
+                            <ul class="d-flex align-items-center gap-3 list-unstyled">
                                 <li>
-                                    <div class="social-links"><span class="social-title">Follow Us:</span> <a
-                                            href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a
-                                            href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a
-                                            href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <div class="social-links">
+                                        <span class="social-title">Follow Us:</span>
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </li>
-                                <li class="d-none d-md-inline-block">
-                                    <div id="google_translate_element">
-                                    </div>
-
-                                    <!-- <div class="dropdown-link"><a class="dropdown-toggle" href="#" role="button"
-                                            id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><a> English</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1"
-                                            style="margin: 0px;">
-                                            <li><a href="#">English</a> <a href="#">Hindi</a>
-                                                    
-                                        </ul>
-                                    </div> -->
+                                <li>
+                                    
+                                        <div id="google_translate_element"></div>
+                                    
                                 </li>
-
                             </ul>
+                            
 
                         </div>
                     </div>
@@ -132,7 +194,7 @@
                                             <li><a href="index.html">Home</a>
 
                                             </li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About Us</a></li>
                                             <li><a href="product.html">Product</a></li>
                                             <li><a href="thirdparty.html">Third Party Manufacturing</a>
                                             </li>
@@ -164,13 +226,48 @@
             </div>
         </div>
     </header>
+    <!-- <div class="banner">
+        <video autoplay loop muted playsinline>
+            <source src="assets/Untitled design (10).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Enjoy the experience</p>
+        </div>
+    </div> -->
     <div class="th-hero-wrapper hero-2" id="hero">
+        
         <div class="swiper th-slider hero-slider2" id="heroSlide2"
             data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
+
+                
+                <div class="swiper-slide">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/Untitled design (10).mp4" type="video/mp4">
+                        
+                    </video>
+                   
+                </div>
+                <div class="hero2-animated-bubble">
+                    <div class="bubbles"><img src="assets/img/shape/bubble_1.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_2.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_3.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_4.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_5.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_6.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_7.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_8.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_9.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_10.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_11.png" alt=""></div>
+                    <div class="bubbles"><img src="assets/img/shape/bubble_12.png" alt=""></div>
+                </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg2" data-bg-src="assets/img/hero/hero_bg_2_1.jpg"><img
+                      
+                            <div class="th-hero-bg2" data-bg-src="assets/img/hero/hero_bg_2_1.jpg"><img
                                 src="assets/img/hero/Untitled design (7).png" alt="Hero overlay"></div>
                         <div class="shape-mockup zoom1 shape-1"><img src="assets/img/shape/team-sahpe-1-1.svg"
                                 alt="shape"></div>
@@ -208,6 +305,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="hero-inner">
                         <div class="th-hero-bg2" data-bg-src="assets/img/hero/hero_bg_2_2.jpg"><img
@@ -248,6 +346,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <div class="hero2-bottom-from-area">
@@ -763,7 +863,10 @@
             </div>
         </div>
     </section>
-
+    <!-- <div class="db" style="height: 100%; width: 100%; overflow: hidden;">
+        <video src="assets/4x group 20sec - Made with Clipchamp.mp4" width="300" height="200" controls autoplay loop muted style="object-fit: cover;"></video>
+    </div> -->
+    
     <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_2.jpg">
         <div class="shape-mockup footer-shape-1 jump-reverse d-none d-xxl-block"><img
                 src="assets/img/icon/footer-shape-1.png" alt="shape"></div>
@@ -917,8 +1020,11 @@
                 setGoogleTranslateLanguage('hi'); // Force Hindi translation on load
             }, 500); // Delay to ensure Google Translate is loaded
         };
-    </script>
 
+setTimeout(addPlaceholderToGoogleTranslate, 1000);
+
+    </script>
+    
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
