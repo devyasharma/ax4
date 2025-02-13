@@ -231,6 +231,47 @@ h6 {
     font-size: 20px;
     line-height: 1.5
 }
+.call-now{
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    object-fit: contain; /* Ensure aspect ratio is maintained */
+    position: fixed;
+    bottom: 100px;
+    right: 28px;
+    background-color: #3f75da;
+    color: white;
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding to fit icon better */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex; /* Center the image */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 40px;
+    margin-right: 0px;
+}
+.whatsapp-icon {      
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    object-fit: contain; /* Ensure aspect ratio is maintained */
+    position: fixed;
+    bottom: 45px;
+    right: 28px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding to fit icon better */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex; /* Center the image */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 40px;
+    margin-right: 0px;
+    
+    }
 .video-container {
     position: relative;
     width: 100%;
@@ -253,10 +294,10 @@ h6 {
     /* opacity: 0.7; */
     pointer-events: none; /* Ensures clicks go through the image */
 }
-video-container {
+.video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full height */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -277,22 +318,23 @@ video-container {
 }
 .vd{
     width: 100%;
-    /* height: 115vh; */
-    background-color: rgba(49, 83, 85, 0.4);
+    /* height: 15vh; */
+    /* background-color: rgba(49, 83, 85, 0.4); */
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 20px;
     padding: 0;
+    /* top: 10rem; */
 }
-.content{
+.contentt{
     text-align: center;
     position: absolute;
 }
-.vdo-content{
-    margin-top: 50px !important;
+.vdo-contentt{
+    /* margin-top: 50px !important; */
 }
-.content .vdo-content h1{
+.contentt .vdo-contentt h1{
     font-size: 85px;
     color: #fff;
    
@@ -300,7 +342,7 @@ video-container {
     align-items: center;
     justify-content: center;
 }
-.content a{
+.contentt a{
     font-size: 18px;
     color: #fff;
     text-decoration: none;
@@ -309,7 +351,7 @@ video-container {
     border-radius: 50px;
     transition: 0.3s;
 }
-.content a:hover{
+.contentt a:hover{
 background-color: #fff;
 color: #000;
 }
@@ -319,49 +361,59 @@ color: #000;
     bottom: 0;
     left: 0;
     z-index: -1;
+    top: 8rem;
 }
 
 @media (max-width:993px) {
-    .content .vdo-content h1{
+    .vdo-contentt{
+        margin-top: 1255px;
+    }
+}
+
+@media (max-width:993px) {
+    .vdo-contentt{
+        margin-top: 170px;
+    }
+    .contentt .vdo-contentt h1{
         
         font-size: 55px;
        
     }
-    .content .vdo-content a{
+    .contentt .vdo-contentt a{
         padding: 10px 25px;
         
     }
 }
 @media (max-width:763px) {
-    .vdo-content{
-        margin-top: 80px;
+    .vdo-contentt{
+        margin-top: 250px;
     }
-    .content .vdo-content h1{
+    .contentt .vdo-contentt h1{
         font-size: 45px;
        
     }
 }
 @media (max-width:653px) {
-    .vdo-content{
-        margin-top: 150px !important;
+    .vdo-contentt{
+        margin-top: 250px;
     }
-    .content .vdo-content h1{
+    .contentt .vdo-contentt h1{
         font-size: 35px;
        
     }
-    .content .vdo-content a{
+    .contentt .vdo-contentt a{
         padding: 10px 15px;
     }
 }
 @media (max-width:576px) {
-    .vdo-content{
-        margin-top: 90px !important;
+    .vdo-contentt{
+        margin-top: 210px;
     }
-    .content .vdo-content h1{
+    .contentt .vdo-contentt h1{
         font-size: 30px;
        
     }
-    .content .vdo-content a{
+    .contentt .vdo-contentt a{
         padding: 8px 15px;
     }
 }
@@ -369,26 +421,26 @@ color: #000;
     /* .vdo-content{
         margin-top: 90px !important;
     } */
-    .content .vdo-content h1{
+    .contentt .vdo-contentt h1{
         font-size: 20px;
        
     }
-    .content .vdo-content a{
+    .contentt .vdo-contentt a{
         padding: 6px 15px;
     }
 }
 @media (max-width:380px) {
-    .vdo-content{
-        margin-top: 120px !important;
+    .vdo-contentt{
+        margin-top: 250px !important;
         line-height: 10px;
     }
-    .content .vdo-content h1{
+    .content .vdo-contentt h1{
         font-size: 13px;
        font-weight: 500;
     }
-    .content .vdo-content a{
+    .content .vdo-contentt a{
         padding: 2px 15px;
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 @media (min-aspect-ratio:16/9){
@@ -403,6 +455,18 @@ color: #000;
         width: auto;
         height: 100%;
     }
+}
+@media (max-width: 1330px) {
+    .about-ii{
+        /* margin-bottom: 340px; */
+    }
+    
+}
+@media (max-width: 767px) {
+    .about-iii{
+        /* margin-top: 0px; */
+    }
+    
 }
 
 @media (max-width: 1199px) {
@@ -437,6 +501,11 @@ color: #000;
     .h6,
     h6 {
         font-size: 16px
+    }
+}
+@media(max-width: 575px){
+    .contact-form{
+        padding: 50px;
     }
 }
 
@@ -2374,7 +2443,13 @@ textarea.is-invalid {
 .title-area {
     margin-bottom: calc(var(--section-title-space) - 11px);
     position: relative;
-    z-index: 2
+    z-index: 2;
+    margin-top: 70px;
+}
+@media(max-width: 1199px){
+    .about-i{
+        margin-top: 100px;
+    }
 }
 
 .title-area .sec-title {
@@ -2913,7 +2988,7 @@ hr.title-line {
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-color: rgb(176, 239, 255);
-height: 722px;
+height: 700px;
 }
 
 .bg-smoke2 {
@@ -6483,7 +6558,7 @@ ol.wp-block-rss {
         padding: 0 15px
     }
     .bg-smoke{
-        height: 603px;
+        height: 680px;
     }
 }
 
@@ -13525,7 +13600,11 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 575px) {
     .contact-form {
-        padding: 40px 20px
+        padding: 40px;
+    
+    }
+    .form-btn{
+        margin-bottom: 50px !important;
     }
 }
 
@@ -13562,6 +13641,7 @@ span.select2-selection.select2-selection--single:focus {
     .contact-map iframe {
         height: 350px;
         border-radius: 0px
+        
     }
 }
 
@@ -21468,7 +21548,8 @@ span.select2-selection.select2-selection--single:focus {
 
     .space,
     .space-bottom {
-        padding-bottom: var(--section-space-mobile)
+        padding-bottom: var(--section-space-mobile);
+        padding-top: 50px;
     }
 
     .space-extra,
